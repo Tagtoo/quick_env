@@ -55,6 +55,7 @@ webob
 webtest
 ipython
 pdbpp
+scrapy
 gcloud==0.4.1
 facebookads
 -e git://github.com/lucemia/gcloud-python-orm.git@0.4.1#egg=gcloudorm
