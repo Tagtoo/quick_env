@@ -1,4 +1,5 @@
 backlash
+django-codemirror-widget
 beautifulsoup
 beautifulsoup4>=4.3.2
 clime
