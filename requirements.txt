@@ -60,6 +60,7 @@ scrapy
 gcloud==0.4.1
 facebookads
 htmlmin
+django-crispy-forms==1.4
 -e git://github.com/lucemia/gcloud-python-orm.git@0.4.1#egg=gcloudorm
 -e git+git://github.com/Tagtoo/ndb-utils.git@master#egg=ndb-utils
 -e git+git://github.com/Tagtoo/pyslack.git@master#egg=pyslack
