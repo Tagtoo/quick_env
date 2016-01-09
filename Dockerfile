@@ -18,7 +18,12 @@ RUN apt-get install -y libffi-dev
 RUN apt-get install -y build-essential libssl-dev libffi-dev
 RUN npm install -g browserify 
 RUN easy_install pip
+RUN apt-get install -y libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
 
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
 RUN apt-get install -y uwsgi
+RUN locale-gen zh_TW zh_TW.UTF-8 zh_CN.UTF-8 en_US.UTF-8
+ENV LC_CTYPE=zh_TW.UTF-8
+ENV LC_MESSAGES=zh_TW.UTF-8
+ENV LC_TIME=en_US.UTF-8
