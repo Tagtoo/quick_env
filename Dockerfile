@@ -19,6 +19,7 @@ RUN apt-get install -y build-essential libssl-dev libffi-dev
 RUN npm install -g browserify 
 RUN easy_install pip
 RUN apt-get install -y libtiff5-dev libjpeg8-dev zlib1g-dev libfreetype6-dev liblcms2-dev libwebp-dev tcl8.6-dev tk8.6-dev python-tk
+RUN npm -g install npm@2.1.1
 
 ADD requirements.txt /tmp/requirements.txt
 RUN pip install -r /tmp/requirements.txt
