@@ -28,3 +28,8 @@ RUN locale-gen zh_TW zh_TW.UTF-8 zh_CN.UTF-8 en_US.UTF-8
 ENV LC_CTYPE=zh_TW.UTF-8
 ENV LC_MESSAGES=zh_TW.UTF-8
 ENV LC_TIME=en_US.UTF-8
+
+RUN apt-get install -y unzip 
+ADD google_appengine_1.9.30.zip /tmp/google_appengine.zip
+RUN unzip /tmp/google_appengine.zip -d /usr/lib
+
